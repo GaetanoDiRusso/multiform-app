@@ -1,0 +1,1 @@
+In this directory we have data models, such as the Presentation objects, that may be different from those of the backend Domain (i.e.: in the user data, we shouldn't have sensitive information that the backend has access to)
