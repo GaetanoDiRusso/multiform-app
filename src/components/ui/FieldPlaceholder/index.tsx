@@ -27,16 +27,16 @@ const FieldPlaceholder = ({ fieldData, onUpdatePage, disabled }: Props) => {
             <CardContent>
                 <RadioGroup onValueChange={(v) => onUpdatePage(+v as 1 | 2 | 3)} defaultValue={fieldData.page.toString()}>
                     <div className="flex items-center space-x-2">
-                        <RadioGroupItem disabled={disabled} value="1" id="page-one" />
-                        <Label htmlFor="page-one">Page One</Label>
+                        <RadioGroupItem disabled={disabled} value="1" id={`${fieldData.id}-page-one`} />
+                        <Label htmlFor={`${fieldData.id}-page-one`}>Page One</Label>
                     </div>
                     <div className="flex items-center space-x-2">
-                        <RadioGroupItem disabled={disabled} value="2" id="page-two" />
-                        <Label htmlFor="page-two">Page Two</Label>
+                        <RadioGroupItem disabled={disabled} value="2" id={`${fieldData.id}-page-two`} />
+                        <Label htmlFor={`${fieldData.id}-page-two`}>Page Two</Label>
                     </div>
                     <div className="flex items-center space-x-2">
-                        <RadioGroupItem disabled={disabled} value="3" id="page-three" />
-                        <Label htmlFor="page-three">Page Three</Label>
+                        <RadioGroupItem disabled={disabled} value="3" id={`${fieldData.id}-page-three`} />
+                        <Label htmlFor={`${fieldData.id}-page-three`}>Page Three</Label>
                     </div>
                 </RadioGroup>
             </CardContent>
