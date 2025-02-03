@@ -4,9 +4,9 @@ import React from "react";
 import { callServerAction } from "@/utils/server-actions.utils";
 import { PUserFormData } from "@/models/PUserFormData";
 import { getAllUsersFormData } from "@/server/infraestructure/server-actions/FormActions";
-import TableView from "./_table/TableView";
+import DataView from "./_data/DataView";
 
-// For better folder structure, the TableView and useTableViewModel (if required) are under _table folder
+// For better folder structure, the DataView and DataViewModel (if required) are under _table folder
 
 const Table = async () => {
   let usersFormData: PUserFormData[] | undefined = undefined;
@@ -19,7 +19,7 @@ const Table = async () => {
 
   return (
     <div className="container mx-auto py-10">
-        <TableView data={usersFormData} />
+        <DataView data={usersFormData} />
     </div>
   );
 };

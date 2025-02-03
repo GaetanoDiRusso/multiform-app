@@ -7,7 +7,7 @@ type Props = {
     data: PUserFormData[],
 }
 
-const TableView = ({ data }: Props) => {
+const DataView = ({ data }: Props) => {
 
     return (
         <div>
@@ -18,4 +18,4 @@ const TableView = ({ data }: Props) => {
     )
 }
 
-export default TableView
+export default DataView
